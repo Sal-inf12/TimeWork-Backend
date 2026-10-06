@@ -1,0 +1,5 @@
+node_modules
+dist
+.env
+db.sqlite
+bash.exe.stackdump

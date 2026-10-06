@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    container_name: timework-api
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - ./db.sqlite:/app/db.sqlite
+    restart: unless-stopped
